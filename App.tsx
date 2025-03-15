@@ -17,7 +17,11 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Profile" component={ProfileScreen} />
         <Stack.Screen name="Search" component={SearchScreen} />
-        <Stack.Screen name="TaskList" component={TaskListScreen} />
+        <Stack.Screen 
+        name="TaskList" 
+        component={TaskListScreen}
+        options={{ headerShown: false }}
+      />
         <Stack.Screen name="EditTask" component={EditTaskScreen} />
       </Stack.Navigator>
     </NavigationContainer>
